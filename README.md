@@ -1,7 +1,12 @@
-# QGIS_BasicsPy
-Quickly Visualizing and analyzing powered by Python programming basics. An overview of automate common Python tasks.
+#Introducing Python
 
-# Australian Wildfires - a machine learning approach 
+This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing by Python programming basics. An overview of automate common Python tasks.
+
+Its great for users who does not have any prior programming knowledge and they want to build their knowledge gradually in QGIS.
+
+# Object-oriented language - Python
+
+Benefits: No need to declare variables types & it provides a great amount of python machine learning and analytical packages.
 
 **Exploratory analysis of wild-fires in Australia & a machine learning approach 
 for wildfire modeling in Google Earth Engine**
