@@ -4,7 +4,7 @@ This repository aims to outline Python programming language in QGIS and keep it 
 
 PyQgis cookbook can be found [here](https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/).
 
-It is great for users who do not have any prior programming knowledge and they want to build their knowledge gradually in QGIS. Python provides a great amount of python machine learning and analytical packages.
+It is great for users who do not have any prior programming knowledge and they want to build their knowledge gradually in QGIS. 
 
 *1) Python script to open a preexisting QGIS project named as .qgz*
 ```python
