@@ -2,7 +2,7 @@
 
 This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing data.
 
-PyQgis cookbook can be found here: https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/
+PyQgis cookbook can be found [here](https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/).
 
 Its great for users who does not have any prior programming knowledge and they want to build their knowledge gradually in QGIS.
 
