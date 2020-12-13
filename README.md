@@ -1,7 +1,9 @@
-#Introducing Python
+# Introducing Python
 
-This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing by Python programming basics. An overview of automate common Python tasks.
+This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing data.
+QGIS 
 
+PyQgis cookbook can be found here: https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/
 Its great for users who does not have any prior programming knowledge and they want to build their knowledge gradually in QGIS.
 
 # Object-oriented language - Python
