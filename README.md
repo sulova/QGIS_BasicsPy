@@ -1,3 +1,4 @@
+<img src="http://mypy-lang.org/static/mypy_light.svg" alt="mypy logo" width="300px"/>
 # Introducing Python
 
 This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing data.
