@@ -1,4 +1,3 @@
-<img src="http://mypy-lang.org/static/mypy_light.svg" alt="mypy logo" width="300px"/>
 # Introducing Python
 
 This reprository aims to outline Python programming language in QGIS and keep it short and relevant to get solid foundation for visualizing and analyzing data.
@@ -11,7 +10,7 @@ Its great for users who does not have any prior programming knowledge and they w
 
 *The flowchart of processes employed in the study for generating the predictive model in GEE.*
 
-```
+```python
 function test() {
   console.log("notice the blank line before this function?");
 }
