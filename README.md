@@ -6,13 +6,20 @@ PyQgis cookbook can be found [here](https://docs.qgis.org/testing/en/docs/pyqgis
 
 It is great for users who do not have any prior programming knowledge and they want to build their knowledge gradually in QGIS. Python provides a great amount of python machine learning and analytical packages.
 
-*Add layer.shp to QGIS.*
+*Python script to open a preexisting QGIS project named as qgz or QGZ.*
+```python
+project.write("C:\\Users\\sulova andrea\\Desktop\\Courses\\ROAD.qgz")
+QgsProject.instance().clear()
 
+```
+
+
+*Python script to open a preexisting project.*
 
 ```python
 QgsProject.instance().setCrs(QgsCoordinateReferenceSystem(26910))
 
-layer = iface.addVectorLayer("C:\\Users\\sulova andrea\\Desktop\\Courses\\Ex_Files_QGIS_Python_AEC\Exercise Files\\1 Beginning Python\\DATA\\ROAD_CENTERLINES.shp","Roads","ogr")
+layer = iface.addVectorLayer("C:\\Users\\sulova andrea\\Desktop\\Courses\\ROAD.shp","Roads","ogr")
 
 layer.renderer().symbol().setColor(QColor("green"))
 layer.triggerRepaint()
