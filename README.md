@@ -10,15 +10,17 @@ It is great for users who do not have any prior programming knowledge and they w
 ```python
 project = QgsProject.instance()
 project.read("C:\\Users\\sulova andrea\\Desktop\\Courses\\ProjectName.qgz")
-
 ```
 
 *2) To load a vector layer in selected the Cooridnate Reference System WGS84 (EPSG: 4326)*
 ```python
 QgsProject.instance().setCrs(QgsCoordinateReferenceSystem(4326))
 
-# "Roads" defines a name of layer and "OGR" means datatype. 
+# Add vector data "Roads" and "OGR" means datatype. 
 layer = iface.addVectorLayer("C:\\Users\\sulova andrea\\Desktop\\Courses\\ROAD.shp","Roads","ogr")
+
+# Add raster data "Aerials" 
+layer = iface.addRasterLayer("C:\\Users\\sulova andrea\\Desktop\\Courses\\IMO.ecw","Aerials")
 
 # set the color to green
 layer.renderer().symbol().setColor(QColor("green"))
@@ -31,5 +33,4 @@ layer.triggerRepaint()
 ```python
 project.write("C:\\Users\\sulova andrea\\Desktop\\Courses\\ProjectName.qgz")
 QgsProject.instance().clear()
-
 ```
