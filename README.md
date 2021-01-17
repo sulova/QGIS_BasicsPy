@@ -63,6 +63,7 @@ myLayer=root.findLayer(road_layer.id())
 # Export the layer definition into a dictionary
 QgsLayerDefinition().exportLayerDefinition("C:\\Users\\sulova andrea\\Desktop\\Courses\\test.qlr",[myLayer])
 ```
+
 *5) Save a working project 
 ```python
 project.write("C:\\Users\\sulova andrea\\Desktop\\Courses\\streetlight_map_new.qgz")
