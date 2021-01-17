@@ -64,19 +64,19 @@ myLayer=root.findLayer(road_layer.id())
 QgsLayerDefinition().exportLayerDefinition("C:\\Users\\sulova andrea\\Desktop\\Courses\\test.qlr",[myLayer])
 ```
 
-*5) Save a working project 
+*5) Save a working project* 
 ```python
 project.write("C:\\Users\\sulova andrea\\Desktop\\Courses\\streetlight_map_new.qgz")
 QgsProject.instance().clear()
 ```
 
-*6) Set CrsProj(26910) of the open project
+*6) Set CrsProj(26910) of the open project*
 ```python
 crs = QgsCoordinateReferenceSystem(26910)
 QgsProject.instance().setCrs(crs)
 ```
 
-*7) Set a new coordinate projection for an open project
+*7) Set a new coordinate projection for an open project*
 ```python
 proj4 = "+proj=utm +zone=10 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
 crs = QgsCoordinateReferenceSystem()
