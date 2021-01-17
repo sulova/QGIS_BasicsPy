@@ -12,7 +12,7 @@ project = QgsProject.instance()
 project.read("C:\\Users\\sulova andrea\\Desktop\\Courses\\ProjectName.qgz")
 ```
 
-*2) To load a vector layer in selected the Cooridnate Reference System WGS84 (EPSG: 4326)*
+*2) To load a vector layer is selected the Coordinate Reference System WGS84 (EPSG: 4326)*
 ```python
 QgsProject.instance().setCrs(QgsCoordinateReferenceSystem(4326))
 
@@ -29,8 +29,21 @@ layer.renderer().symbol().setColor(QColor("green"))
 layer.triggerRepaint()
 ```
 
-*3) Python script to open a preexisting QGIS project named as qgz or QGZ.*
+*3) Buffer (temp_location)*
 ```python
-project.write("C:\\Users\\sulova andrea\\Desktop\\Courses\\ProjectName.qgz")
-QgsProject.instance().clear()
+# A temporary location
+bufferloc = "C:\\temp\\mybuffer.shp"
+
+# Creating the buffer of 3m distance using the road centerlines
+processing.run("native:buffer", {'INPUT':'C:\\Users\\sulova andrea\\Desktop\\Courses\\ROAD_CENTERLINES.shp',
+'DISTANCE':3,
+'SEGMENTS':5,
+'END_CAP_STYLE':0,
+'JOIN_STYLE':0,
+'MITER_LIMIT':2,
+'DISSOLVE':False,
+'OUTPUT':bufferloc})
+
+# Add buffer saved as "bufferlo"as a layer in project named "(3M)"
+iface.addVectorLayer(bufferloc,"(3M)","ogc")
 ```
