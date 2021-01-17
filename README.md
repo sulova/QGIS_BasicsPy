@@ -47,3 +47,20 @@ processing.run("native:buffer", {'INPUT':'C:\\Users\\sulova andrea\\Desktop\\Cou
 # Add buffer saved as "bufferlo"as a layer in project named "(3M)"
 iface.addVectorLayer(bufferloc,"(3M)","ogc")
 ```
+
+*4) Save layer definition*
+```
+#Open Current Project
+myInstance = QgsProject.instance()
+
+#layer name 'ROAD_CENTERLINES' open in project is given to 'road_layer'
+road_layer = myInstance.mapLayersByName('ROAD_CENTERLINES')[0]
+root = myInstance.layerTreeRoot()
+
+# find an id of layer root 
+myLayer=root.findLayer(road_layer.id())
+
+# Export the layer definition into a dictionary
+QgsLayerDefinition().exportLayerDefinition("C:\\Users\\sulova andrea\\Desktop\\Courses\\test.qlr",[myLayer])
+```
+
